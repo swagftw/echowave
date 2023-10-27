@@ -1,0 +1,8 @@
+[psql]
+host = "localhost"
+port = 5433
+dbname = "echowave"
+pass = "password"
+user = "echowave"
+sslmode = "disable"
+schema = "usr"

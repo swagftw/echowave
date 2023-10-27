@@ -1,0 +1,18 @@
+syntax = "proto3";
+package user;
+
+option go_package = "EchoWave/internal/proto";
+
+message User {
+  string id = 1;
+  string username = 2;
+  string avatar = 3;
+}
+
+message GetUserByUsernameRequest {
+  string username = 1;
+}
+
+service UserService {
+  rpc GetUserByUsername(GetUserByUsernameRequest) returns (User);
+}

@@ -1,0 +1,12 @@
+[psql]
+host = "localhost"
+port = 5432
+dbname = "echowave"
+pass = "password"
+user = "echowave"
+sslmode = "disable"
+schema = "messages"
+
+[auto-columns]
+created = "createdAt"
+updated = "updatedAt"

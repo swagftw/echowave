@@ -1,0 +1,9 @@
+port: 8080
+debug: true
+otel:
+  dsn: http://echowave_secret_token@localhost:14317/2
+  service: service
+  version: v1.0.0
+  deploymentEnv: dev
+postgres:
+  url: postgres://echowave:password@localhost:5432/echowave?sslmode=disable
